@@ -1,0 +1,21 @@
+{
+  "name": "gulp-task-image-compression",
+  "version": "1.0.0",
+  "description": "Image compression with a gulp taks",
+  "main": "index.js",
+  "scripts": {
+    "compress:images": "./node_modules/.bin/gulp compress:images"
+  },
+  "author": "David Janitzek",
+  "license": "GNU",
+  "devDependencies": {
+    "graceful-fs": "^4.2.4",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-svgmin": "^3.0.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpeg-recompress": "^7.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^8.0.0"
+  }
+}
