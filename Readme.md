@@ -1,4 +1,4 @@
-# Run image compression
+# Run compression
 
     nano gulpfile
 
@@ -8,11 +8,14 @@
     #  to your needs.
 
     npm install 
+
     npm update
-    mkdir source
-    mkdir public
+
     cd source
     # copy images you want to compress to the source folder
+
     cp -R /source/path/to/your/images/ . 
+
     cd ..
+
     npm run compress:images
