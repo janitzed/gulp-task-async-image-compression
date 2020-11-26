@@ -1,4 +1,4 @@
-# Run compression
+# Async image compression
 
     nano gulpfile
 
