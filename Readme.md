@@ -3,9 +3,8 @@
     nano gulpfile
 
     #  Change the variables: 
-    #    - SOURCE
-    #    - DESCTINATION 
-    #  to your needs.
+    #  SOURCE='your/source/path'
+    #  DESCTINATION='your/target/path' 
 
     npm install 
 
@@ -18,4 +17,4 @@
 
     cd ..
 
-    npm run compress:images
+    npm run compress

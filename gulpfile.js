@@ -9,12 +9,18 @@ const { resolve } = require('path');
 const { readdir } = require('fs').promises;
 const microtime = require('microtime')
 
-const prefix = '';
-const SOURCE = './source/' + prefix;
-const DESTINATION = './public/' + prefix;
-const PATH = path.join(__dirname, SOURCE);
+/**
+ * Allowed file types
+ */
+const ALLOWED = ['jpg', 'JPG', 'jpeg', 'JPEG', 'png', 'PNG', 'gif', 'GIF', 'ico', 'ICO', 'webp', 'WEBP'];
 
-const allowedFileTypes = ['jpg', 'JPG', 'jpeg', 'JPEG', 'png', 'PNG', 'gif', 'GIF', 'ico', 'ICO', 'webp', 'WEBP'];
+/**
+ * Paths
+ */
+const suffix = '2014';
+const SOURCE = './source/' + suffix;
+const DESTINATION = './public/' + suffix;
+const PATH = path.join(__dirname, SOURCE);
 
 /*
  * Get all files inside (nested) directory
@@ -35,7 +41,7 @@ const getAllFilesInsideDirectory = async (dir, mainFileNames = []) => {
 
     const extension = res.split('.');
 
-    if (2 <= res.length && allowedFileTypes.includes(extension[extension.length - 1])) {
+    if (2 <= res.length && ALLOWED.includes(extension[extension.length - 1])) {
       mainFileNames.push(res);
     }
   }
