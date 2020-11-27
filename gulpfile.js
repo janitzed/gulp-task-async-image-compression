@@ -17,7 +17,7 @@ const ALLOWED = ['jpg', 'JPG', 'jpeg', 'JPEG', 'png', 'PNG', 'gif', 'GIF', 'ico'
 /**
  * Paths
  */
-const suffix = '2014';
+const suffix = '';
 const SOURCE = './source/' + suffix;
 const DESTINATION = './public/' + suffix;
 const PATH = path.join(__dirname, SOURCE);
