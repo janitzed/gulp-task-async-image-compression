@@ -20,5 +20,9 @@
     "imagemin-svgo": "^8.0.0",
     "microtime": "^3.0.0",
     "path": "^0.12.7"
+  },
+  "dependencies": {
+    "get-folder-size": "^2.0.1",
+    "gulp-exec": "^5.0.0"
   }
 }

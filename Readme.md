@@ -1,11 +1,12 @@
 # Async image compression
-
     nano gulpfile
 
     #  Change the variables: 
     #  SOURCE='your/source/path'
     #  DESCTINATION='your/target/path' 
 
+    sudo apt-get install libtool automake autoconf nasm
+    
     npm install 
 
     npm update
